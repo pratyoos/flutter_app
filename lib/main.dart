@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_flutter_app/Day2/day2.dart';
-import 'package:my_flutter_app/Day3/day3.dart';
+import 'package:my_flutter_app/Day4/day4.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,14 +7,16 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Counter App',
+      title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: const SignInScreen(),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: SplashScreen(),
     );
   }
 }
